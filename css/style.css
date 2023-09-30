@@ -22,7 +22,7 @@ body, ul, li, p{
     border-radius: 20px;
     overflow: hidden; /*Vai esconder todo o conteúdo que está ultrapassando as medidas do .content*/
     position: absolute; /*Serve para posicionamento a onde você desejar na tela*/
-    top: 50%; /*Centralizar o topo*/
+    top: 150%; /*Centralizar o topo*/
     left: 50%;/*Centralizar a Esquerda*/
     transform: translate(-50%, -50%);
 }
@@ -100,6 +100,44 @@ h1{
     color: white;
 }
 
+.descricao-principal{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module{
+    padding: 40px 0;
+    background-color: rgb(255, 166, 32);
+}
+
+section.module-paralax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-image: url(/img/paralax2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module-paralax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%)
+}
 .Guia{
     justify-content: space-around;
     display: flex;

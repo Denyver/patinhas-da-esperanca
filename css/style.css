@@ -22,7 +22,7 @@ body, ul, li, p{
     border-radius: 20px;
     overflow: hidden; /*Vai esconder todo o conteúdo que está ultrapassando as medidas do .content*/
     position: absolute; /*Serve para posicionamento a onde você desejar na tela*/
-    top: 150%; /*Centralizar o topo*/
+    top: 300%; /*Centralizar o topo*/
     left: 50%;/*Centralizar a Esquerda*/
     transform: translate(-50%, -50%);
 }

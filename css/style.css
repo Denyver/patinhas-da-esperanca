@@ -107,15 +107,24 @@ h1{
     padding: 0 20px;
 }
 section.adote-paralax1{
-    margin-top: 20%;
+    margin-top: 10%;
     color: #fff;
+    font-size: 35px;
+    text-align: center;
+    z-index: 50;
+}
+
+section.adote-paralax1 p{
+    margin-top: -1%;
+    color: #fff;
+    font-size: 25px;
     text-align: center;
     z-index: 50;
 }
 
 section.module{
     padding: 40px 0;
-    background-color: rgb(255, 166, 32);
+    background-color: #00132E;
 }
 
 section.module-paralax{
@@ -326,7 +335,6 @@ nav ul li:hover .submenu{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 10%;
     justify-content: center;
     flex-wrap: wrap;
 }

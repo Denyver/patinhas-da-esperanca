@@ -13,7 +13,87 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        background-image: url('/img/1307447.jpg');
+        background-image: url('/img/wallpaper1.avif');
+
+        .title{
+            color: white;
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.521);
+            padding: 15px;
+            border-radius: 20px;
+            width: 20%;
+        }
+        legend{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            background-color: #0d0d13;
+            border-radius: 7px;
+        }
+        #conta{
+            position: fixed;
+            top: 600px;
+            left: 44%;
+            width: 200px;
+        }
+        .inputbox{
+            position: relative;
+            margin: 10px;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px; /*espaço entre as letras*/
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none; /*qualquer lugar que clicar, vai executar a ação do input*/
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{ /*focus = quando der o foco pro inputUser ele vai executar uma ação*/
+            top: -20px;
+            font-size: 12px;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px; /*deixa as bordas mais redondas*/
+            outline: none; /*retira as bordas externas*/
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right rgb(39, 39, 39) rgb(255, 255, 255));
+            width: 100%;
+            border-radius: 14px;
+            border: none;
+            padding: 15px;
+            font-size: 15px;
+            cursor: pointer; /*Ao passar o cursor do mouse, apenas muda o ícone*/
+            margin-top: 18px;
+        }
+        #submit:hover{ /*hover faz cria umaação ao passar o mouse*/
+            background-image: linear-gradient(to right rgb(9, 9, 9) rgb(169, 169, 169));
+        }
+        #fieldset{
+            border-radius: 10px;
+        }
+        #checkbox{
+            margin-left: 22%;
+            
+        }
       }
     </style>
   </head>
@@ -48,43 +128,14 @@
     </nav>
     <script src="/js/pj.js"></script>
 
-    <div class="content">
-      <div class="slides">
-        <input
-          class="radioinput"
-          type="radio"
-          name="slide"
-          id="slide1"
-          checked
-        />
-        <input class="radioinput" type="radio" name="slide" id="slide2"/>
-        <input class="radioinput" type="radio" name="slide" id="slide3"/>
-        <input class="radioinput" type="radio" name="slide" id="slide4"/>
-        <input class="radioinput" type="radio" name="slide" id="slide5"/>
+    <div class="box">
+      <form action="">
+          <fieldset id="fieldset">
+              <legend><b>Pix</b></legend>
+              <img src="/img/logo_pix.png" height="150px" width="150px" alt="">
+      </form>
+  </div>
+  <p id="conta">Já tem uma conta? Faça o <a href="/html/login.html"><i>Login</i></a></p>
 
-        <div class="slide s1">
-          <img src="/img/1.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="/img/2.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="/img/3.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="/img/4.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="/img/5.jpg" alt="" />
-        </div>
-      </div>
-      <div class="navegation">
-        <label class="bar" for="slide1"></label>
-        <label class="bar" for="slide2"></label>
-        <label class="bar" for="slide3"></label>
-        <label class="bar" for="slide4"></label>
-        <label class="bar" for="slide5"></label>
-      </div>
-    </div>
   </body>
 </html>

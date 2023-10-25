@@ -3,23 +3,28 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
 }
 
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: rgb(255, 136, 0);
-  font-family: 'Dancing Script', cursive;
-  z-index: 999;
-  position: fixed;
-  width: 100%;
-  text-decoration: none;
+nav{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 10%;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-.Estilo_do_menu h4{
-    font-family: 'Dosis', sans-serif;
+.logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: larger;
 }
 
 .Estilo_do_menu{
@@ -74,7 +79,7 @@ nav{
  margin: 3px;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:992px){
    .link{
        width: 60%;
    }

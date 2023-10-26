@@ -1,14 +1,19 @@
-:root{
+:root {
     --cor-fundo: rgb(255, 153, 0);
     --cor-hover: #ffc400;
     --cor-primaria: #CAC4CE;
     --cor-teste: rgba(0, 0, 0, 0.579);
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
 }
-body, ul, li, p{
+
+body,
+ul,
+li,
+p {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -16,14 +21,19 @@ body, ul, li, p{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 .content {
     height: 520px;
     width: 935px;
     border-radius: 20px;
-    overflow: hidden; /*Vai esconder todo o conteúdo que está ultrapassando as medidas do .content*/
-    position: absolute; /*Serve para posicionamento a onde você desejar na tela*/
-    top: 300%; /*Centralizar o topo*/
-    left: 50%;/*Centralizar a Esquerda*/
+    overflow: hidden;
+    /*Vai esconder todo o conteúdo que está ultrapassando as medidas do .content*/
+    position: absolute;
+    /*Serve para posicionamento a onde você desejar na tela*/
+    top: 300%;
+    /*Centralizar o topo*/
+    left: 50%;
+    /*Centralizar a Esquerda*/
     transform: translate(-50%, -50%);
 }
 
@@ -49,7 +59,7 @@ body, ul, li, p{
     background-color: #fff;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
@@ -64,49 +74,51 @@ body, ul, li, p{
     transition: .6s;
 }
 
-.slide img{
+.slide img {
     width: 100%;
     height: 100%;
 }
 
-#slide1:checked ~ .s1 {
+#slide1:checked~.s1 {
     margin-left: 0;
 }
 
-#slide2:checked ~ .s1 {
+#slide2:checked~.s1 {
     margin-left: -20%;
 }
 
-#slide3:checked ~ .s1 {
+#slide3:checked~.s1 {
     margin-left: -40%;
 }
 
-#slide4:checked ~ .s1 {
+#slide4:checked~.s1 {
     margin-left: -60%;
 }
 
-#slide5:checked ~ .s1 {
+#slide5:checked~.s1 {
     margin-left: -80%;
 }
 
-a { /*Links*/
+a {
+    /*Links*/
     text-decoration: none;
     color: white;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 70px;
     color: white;
 }
 
-.descricao-principal{
+.descricao-principal {
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
 }
-section.adote-paralax1{
+
+section.adote-paralax1 {
     margin-top: 10%;
     color: #fff;
     font-size: 35px;
@@ -114,7 +126,7 @@ section.adote-paralax1{
     z-index: 50;
 }
 
-section.adote-paralax1 p{
+section.adote-paralax1 p {
     margin-top: -1%;
     color: #fff;
     font-size: 25px;
@@ -122,12 +134,12 @@ section.adote-paralax1 p{
     z-index: 50;
 }
 
-section.module{
+section.module {
     padding: 40px 0;
     background-color: #00132E;
 }
 
-section.module-paralax{
+section.module-paralax {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,16 +157,16 @@ section.module-paralax{
     -o-background-size: cover;
 }
 
-section.module-paralax:after{
+section.module-paralax:after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%)
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
 
-section.index-paralax{
+section.index-paralax {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +184,7 @@ section.index-paralax{
     -o-background-size: cover;
 }
 
-section.index-paralax h1{
+section.index-paralax h1 {
     color: #ffffff;
     text-align: left;
     margin-left: 20px;
@@ -181,33 +193,34 @@ section.index-paralax h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-section.index-paralax p{
+section.index-paralax p {
     color: #ffffff;
     text-align: left;
     margin-left: 20px;
     max-width: 50%;
-    font-size: 20px;
+    font-size: 17px;
     z-index: 50;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-section.index-paralax:after{
+section.index-paralax:after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%)
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
 
-section.module-paralax h1{
+section.module-paralax h1 {
     color: #fff;
     text-align: center;
     font-size: 78px;
     z-index: 50;
     text-transform: uppercase;
 }
-section.module-paralax1{
+
+section.module-paralax1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,16 +238,16 @@ section.module-paralax1{
     -o-background-size: cover;
 }
 
-section.module-paralax1:after{
+section.module-paralax1:after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%)
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
 
-section.index-paralax1{
+section.index-paralax1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,23 +265,33 @@ section.index-paralax1{
     -o-background-size: cover;
 }
 
-section.index-paralax1:after{
+section.index-paralax1 h1{
+    color: #ffffff;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 40px;
+    z-index: 50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section.index-paralax1:after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%)
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
 
-section.module-paralax1 h1{
+section.module-paralax1 h1 {
     color: #fff;
     text-align: center;
     font-size: 78px;
     z-index: 50;
     text-transform: uppercase;
 }
-.Guia{
+
+.Guia {
     justify-content: space-around;
     display: flex;
     font-size: 20%;
@@ -279,63 +302,67 @@ section.module-paralax1 h1{
     width: 100%;
 }
 
-.filterImg{
-    filter: grayscale(1); /*blur(1px) filtro de imagem borrada*/
+.filterImg {
+    filter: grayscale(1);
+    /*blur(1px) filtro de imagem borrada*/
 }
 
-#ficha{
+#ficha {
     width: 75%;
 }
 
-.titulop{
+.titulop {
     font-size: 90pt;
     width: 20% auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.titulo{
+.titulo {
     font-size: 90pt;
     margin-left: 0%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.header{ /*barra de navegador*/
-        font-size: 30px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 20px;
-        color: rgb(255, 255, 255);
-        background-color: #0d0d13;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        transition: background 0.3s;
+.header {
+    /*barra de navegador*/
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #0d0d13;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: background 0.3s;
 }
-.menu{ /*barra de navegador*/
+
+.menu {
+    /*barra de navegador*/
     display: flex;
     font-family: Arial;
     text-decoration: none;
 }
 
-.menu li a{
+.menu li a {
     margin-left: 20px;
     padding: 20px;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background-color: var(--cor-teste);
     transition: background .2s;
     border-radius: 5px;
 }
 
-.submenu{
+.submenu {
     display: none;
 }
 
-nav ul li:hover .submenu{
+nav ul li:hover .submenu {
     display: block;
     position: absolute;
     background-color: rgb(8, 0, 14);
@@ -344,7 +371,7 @@ nav ul li:hover .submenu{
     margin-left: -25px;
 }
 
-.submenu ul li{
+.submenu ul li {
     margin-bottom: 5px;
     padding: 10px;
 }
@@ -358,25 +385,25 @@ nav ul li:hover .submenu{
     flex-wrap: wrap;
 }
 
-.zoom{
+.zoom {
     width: calc((80%/3) - 25px);
     min-width: 200px;
     margin: 20px;
 }
 
-.zoom a img{
+.zoom a img {
     width: 100%;
     gap: 50%;
     border-radius: 10px;
 }
 
-.img-responsive{
+.img-responsive {
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
-.img-responsive:hover{
+.img-responsive:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

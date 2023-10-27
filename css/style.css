@@ -10,6 +10,7 @@ body {
     width: 100vw;
 }
 
+
 body,
 ul,
 li,
@@ -197,7 +198,32 @@ section.index-paralax p {
     color: #ffffff;
     text-align: left;
     margin-left: 20px;
-    max-width: 50%;
+    max-width: 40%;
+    font-size: 17px;
+    z-index: 50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    font-size: 60px;
+    padding: 25px 30px;
+    background-color: #00132E;
+    color: #ffffff;
+    font-weight: bold;
+    border: #ffffff;
+    border-radius: 20px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+section.index-paralax button{
+    margin-top: 1%;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 20px;
+    max-width: 15%;
     font-size: 17px;
     z-index: 50;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -214,10 +240,22 @@ section.index-paralax:after {
 
 section.module-paralax h1 {
     color: #fff;
-    text-align: center;
-    font-size: 78px;
+    text-align: left;
+    max-width: 50%;
+    font-size: 70px;
     z-index: 50;
-    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section.module-paralax button{
+    margin-top: 2%;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 20px;
+    max-width: 15%;
+    font-size: 17px;
+    z-index: 50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.module-paralax1 {
@@ -268,8 +306,21 @@ section.index-paralax1 {
 section.index-paralax1 h1{
     color: #ffffff;
     text-align: right;
-    margin-right: 20px;
-    font-size: 40px;
+    margin-left: 55%;
+    max-width: 40%;
+    font-size: 35px;
+    z-index: 50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section.index-paralax1 button{
+    margin-top: 2%;
+    margin-left: 80%;
+    max-width: 40%;
+    color: #ffffff;
+    text-align: center;
+    max-width: 15%;
+    font-size: 17px;
     z-index: 50;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -285,10 +336,9 @@ section.index-paralax1:after {
 
 section.module-paralax1 h1 {
     color: #fff;
-    text-align: center;
-    font-size: 78px;
+    text-align: left;
+    font-size: 70px;
     z-index: 50;
-    text-transform: uppercase;
 }
 
 .Guia {

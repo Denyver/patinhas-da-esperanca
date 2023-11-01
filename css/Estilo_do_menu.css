@@ -1,12 +1,11 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins" sans-serif;
 }
 
-nav{ 
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,15 +19,15 @@ nav{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     text-decoration: none;
     font-size: larger;
 }
 
-.Estilo_do_menu{
-    color: rgb(226 , 226, 226);
+.Estilo_do_menu {
+    color: rgb(226, 226, 226);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 19px;
@@ -47,19 +46,19 @@ nav{
     transition: .2s;
 }
 
-.link{
+.link {
     font-size: 10px;
     display: flex;
     justify-content: space-between;
     width: 30%;
 }
 
-.link li{
- list-style: none;
+.link li {
+    list-style: none;
 }
 
-.link a{
-    color: rgb(226 , 226, 226);
+.link a {
+    color: rgb(226, 226, 226);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -67,29 +66,30 @@ nav{
     font-family: 'Dosis', sans-serif;
 }
 
-.pp{
+.pp {
     display: none;
     cursor: pointer;
 }
 
-.pp div{
- width: 25px;
- height: 5px;
- background-color: rgb(226 , 226, 226);
- margin: 3px;
+.pp div {
+    width: 25px;
+    height: 5px;
+    background-color: rgb(226, 226, 226);
+    margin: 3px;
 }
 
-@media screen and (max-width:992px){
-   .link{
-       width: 60%;
-   }
-}
-
-@media screen and (max-width:768px){
-    body{
-      overflow-x: hidden;
+@media screen and (max-width:992px) {
+    .link {
+        width: 60%;
     }
-    .link{
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .link {
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -102,38 +102,42 @@ nav{
         transform: translateX(100%);
         transition: transform 0.5 ease-in;
         z-index: 999;
-        
+
     }
-    .link li{
+
+    .link li {
         opacity: 0;
     }
-    .pp{
+
+    .pp {
         display: block;
     }
 }
-.link-active{
+
+.link-active {
     transform: translateX(0);
 }
 
-@keyframes navlinkfade{
-    from{
-    opacity: 0;
-    transform: translateX(50px);
+@keyframes navlinkfade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
-    to{
- opacity: 1;
- transform: translate(0px);
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
     }
 }
 
-.toggle .l1{
-  transform: rotate(-45deg translate(-5px, 6px));
-}
-.toggle .l3{
+.toggle .l1 {
     transform: rotate(-45deg translate(-5px, 6px));
 }
 
-.toggle .l3{
+.toggle .l3 {
     transform: rotate(-45deg translate(-5px, 6px));
 }
 
+.toggle .l3 {
+    transform: rotate(-45deg translate(-5px, 6px));
+}

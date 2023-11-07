@@ -152,6 +152,25 @@ section.module-paralax {
     -o-background-size: cover;
 }
 
+section.index-pag{
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-image: url(/img/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
 section.module-paralax:after {
     content: "";
     height: 100%;

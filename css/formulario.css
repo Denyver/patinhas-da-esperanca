@@ -1,8 +1,9 @@
-#importpdf ,#importimg{
+#importpdf,
+#importimg {
     display: none;
 }
 
-label{
+label {
     padding: 20px 10px;
     width: 200px;
     background: #333;
@@ -18,12 +19,12 @@ label{
     border-radius: 6px;
 }
 
-label:hover{
+label:hover {
     color: #333;
     background: white;
 }
 
-.baixarficha{
+.baixarficha {
     padding: 20px 10px;
     width: 200px;
     background: rgb(255, 0, 0);
@@ -35,9 +36,11 @@ label:hover{
     transition: .5s;
     font-size: 18px;
 }
-.baixarficha:hover{
+
+.baixarficha:hover {
     background: white;
 }
-.baixarficha a{
+
+.baixarficha a {
     color: rgb(0, 0, 0)
 }

@@ -1,6 +1,3 @@
-body
-
-
 section.index-pag{
     display: flex;
     padding: 30px;
@@ -9,7 +6,7 @@ section.index-pag{
     height: 100vh !important;
     position: relative;
     overflow: hidden;
-    background-color:coral;
+    background-color:rgb(39, 39, 39);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,6 +14,14 @@ section.index-pag{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+section.index-pag h5{
+    width: 50%
+}
+
+section.index-pag img{
+    margin-left: 50%;
 }
 
 section.index-pag button{

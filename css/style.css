@@ -201,18 +201,19 @@ section.index-paralax p {
 
 button{
     padding: 25px 30px;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     border: #ffffff;
     border-radius: 50px;
     overflow: hidden;
     transition: 0.5s;
     cursor: pointer;
+    font-size: 15px;
   }
 
   button:hover{
-    background: #f4c803;
-    color: rgb(37, 37, 37);
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     box-shadow: 0 0 5px #ffffff,
                 0 0 25px #ffffff,
                 0 0 50px #ffffff,
@@ -444,7 +445,7 @@ nav ul li:hover .submenu {
     margin: 20px;
 }
 
-.zoom a img {
+.zoom img {
     width: 100%;
     gap: 50%;
     border-radius: 10px;

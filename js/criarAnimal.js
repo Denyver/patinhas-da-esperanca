@@ -1,6 +1,6 @@
-api_link = "https://goqvbotxuj.execute-api.sa-east-1.amazonaws.com/dev";
+api_link = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais/animal";
 
-function postAnimal(nome, especie, raca, url, idade) { //Função Fetch envia os dados via API e recebe uma response com o token referente ao segredo
+function postAnimal(nome, especie, raca, url, idade, descricao) { //Função Fetch envia os dados via API e recebe uma response com o token referente ao segredo
     console.log("Fetch")
     fetch(api_link,
         {
@@ -26,8 +26,9 @@ function createAnimal() {
     let idade = document.getElementById('idade').value;
     let url = document.getElementById('inputimg').value;
     let raca = document.getElementById('raca').value;
-    let especie = document.getElementById('especie').value;
+    let especie = document.querySelector('input[name="especie"]:checked').value;
     let descricao = document.getElementById('descricao').value;
+    console.log(especie);
 
     postAnimal(nome, especie, raca, url, idade, descricao);
 

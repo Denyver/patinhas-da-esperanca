@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+    <title>Adotar</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="/css/Estilo_do_menu.css" />
     <style>
@@ -14,6 +14,10 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        list-style: none;
+      }
+      p{
+        max-width: 10%;
       }
       .title {
         color: white;
@@ -21,11 +25,11 @@
       .box {
         color: white;
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.6);
-        padding: 15px;
+        padding: 10px;
         border-radius: 15px;
         width: 50%;
       }
@@ -74,7 +78,7 @@
         background-image: linear-gradient(
           to right rgb(39, 39, 39) rgb(255, 255, 255)
         );
-        width: 100%;
+        max-width: 50%;
         border-radius: 14px;
         border: none;
         padding: 15px;
@@ -96,11 +100,16 @@
       }
       #fieldset {
         border-radius: 10px;
+        padding: 10px;
+      }
+
+      #inputimg {
+        width: 100%;
       }
 
     </style>
   </head>
-  <body>
+  <body onload="testeGetId()">
     <div class="menu"></div>
     <nav>
       <div class="Estilo_do_menu">
@@ -127,116 +136,35 @@
         <div class="l3"></div>
       </div>
     </nav>
-    <script src="/js/pj.js"></script>
+    <!-- <script src="/js/pj.js"></script> -->
     <div class="box">
-      <form action="">
-        <fieldset id="fieldset">
-          <legend><b>Preencha o Formulário</b></legend>
-          <br>
-          <div class="inputbox">
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              class="inputUser"
-              required
-            />
-            <label for="nome" class="labelInput">Nome Completo</label>
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="text"
-              name="email"
-              id="email"
-              class="inputUser"
-              required
-            />
-            <label for="email" class="labelInput">Email</label>
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              class="inputUser"
-              required
-            />
-            <label for="nome" class="labelInput">Senha</label><br />
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              class="inputUser"
-              required
-            />
-            <label for="nome" class="labelInput">Confirmar Senha</label><br />
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="tel"
-              name="telefone"
-              id="telefone"
-              class="inputUser"
-              required
-            />
-            <label for="telefone" class="labelInput">Telefone</label>
-          </div>
-          <br />
-          <p>Gênero:</p>
-          <!--masculino-->
-          <input
-            type="radio"
-            id="masculino"
-            name="genero"
-            value="masculino"
-            required
-          />
-          <label for="masculino">Masculino</label><br />
-          <!--feminino-->
-          <input
-            type="radio"
-            id="feminino"
-            name="genero"
-            value="feminino"
-            required
-          />
-          <label for="masculino">Feminino</label><br />
-          <!--outros-->
-          <input
-            type="radio"
-            id="outros"
-            name="genero"
-            value="outros"
-            required
-          />
-          <label for="outros">Outros</label><br /><br />
-          <!--data de nascimento-->>
-          <label for="date"><b>Data de Nascimento:</b></label>
-          <input
-            type="date"
-            name="data_nascimento"
-            id="data_nascimento"
-            required
-          /><br /><br /><br />
-          <div class="inputbox">
-            <input type="text" name="cpf" id="cpf" class="inputUser" required />
-            <label for="text" class="labelInput">CPF</label><br /><br />
-          </div>
-        </fieldset>
-        <input
-          onclick="abrirAlerta()"
-          type="submit"
-          name="submit"
-          id="submit"
-        />
-        <input type="reset" name="reset" id="submit" />
-      </form>
+      
+        <img src="" alt="" id="pet_img">
+        <p>
+          Identificação: <span id="id_show"></span>
+        </p> 
+        <p>
+          Nome: <span id="nome"></span>
+        </p>
+        <p>
+          Idade: <span id="idade"></span>
+        </p>
+        <p>
+          Raça: <span id="raca"></span>
+        </p>
+        <p>
+          Espécie: <span id="especie"></span>
+        </p>
+        <p>Descrição</p>
+        <p><span id="descricao"></span></p>
+        <br><br><br>
+        <p>Nome: <input type="text" name="ad_nome" id="ad_nome"></p>
+        <p>E-mail: <input type="text" name="ad_email" id="ad_email"></p>
+        <p>Telefone: <input type="text" name="ad_telefone" id="ad_telefone"></p>
+        <p>CPF: <input type="text" name="ad_cpf" id="ad_cpf"></p>
+        <button>Adotar</button>
+          
     </div>
+    <script src="/js/onloadScript.js"></script>
   </body>
 </html>

@@ -14,6 +14,10 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        list-style: none;
+      }
+      p{
+        max-width: 10%;
       }
       .title {
         color: white;
@@ -21,11 +25,11 @@
       .box {
         color: white;
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.6);
-        padding: 15px;
+        padding: 10px;
         border-radius: 15px;
         width: 50%;
       }
@@ -74,7 +78,7 @@
         background-image: linear-gradient(
           to right rgb(39, 39, 39) rgb(255, 255, 255)
         );
-        width: 100%;
+        max-width: 50%;
         border-radius: 14px;
         border: none;
         padding: 15px;
@@ -96,6 +100,11 @@
       }
       #fieldset {
         border-radius: 10px;
+        padding: 10px;
+      }
+
+      #inputimg {
+        width: 100%;
       }
 
     </style>
@@ -127,11 +136,11 @@
         <div class="l3"></div>
       </div>
     </nav>
-    <script src="/js/pj.js"></script>
+    <!-- <script src="/js/pj.js"></script> -->
     <div class="box">
-      <form action="">
-        <fieldset id="fieldset">
-          <legend><b>Preencha o Formulário</b></legend>
+      
+        
+          <legend><b>Registro Animal</b></legend>
           <br>
           <div class="inputbox">
             <input
@@ -141,102 +150,65 @@
               class="inputUser"
               required
             />
-            <label for="nome" class="labelInput">Nome Completo</label>
+            <label for="nome" class="labelInput">Nome</label>
           </div>
           <br />
           <div class="inputbox">
             <input
               type="text"
-              name="email"
-              id="email"
+              name="Raça"
+              id="raca"
               class="inputUser"
               required
             />
-            <label for="email" class="labelInput">Email</label>
+            <label for="raça" class="labelInput">Raça</label>
           </div>
           <br />
           <div class="inputbox">
             <input
-              type="password"
-              name="senha"
-              id="senha"
+              type="number"
+              name="Idade"
+              id="idade"
               class="inputUser"
               required
             />
-            <label for="nome" class="labelInput">Senha</label><br />
+            <label for="idade" class="labelInput">Idade</label>
           </div>
           <br />
-          <div class="inputbox">
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              class="inputUser"
-              required
-            />
-            <label for="nome" class="labelInput">Confirmar Senha</label><br />
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="tel"
-              name="telefone"
-              id="telefone"
-              class="inputUser"
-              required
-            />
-            <label for="telefone" class="labelInput">Telefone</label>
-          </div>
-          <br />
-          <p>Gênero:</p>
-          <!--masculino-->
+          <p>Espécie</p>
+          <!--Cachorro-->
           <input
             type="radio"
-            id="masculino"
-            name="genero"
-            value="masculino"
+            id="especie"
+            name="especie"
+            value="cachorro"
             required
           />
-          <label for="masculino">Masculino</label><br />
-          <!--feminino-->
+          <label for="especie">Cachorro</label>
+          <!--Gato-->
           <input
             type="radio"
-            id="feminino"
-            name="genero"
-            value="feminino"
+            id="especie"
+            name="especie"
+            value="gato"
             required
           />
-          <label for="masculino">Feminino</label><br />
-          <!--outros-->
-          <input
-            type="radio"
-            id="outros"
-            name="genero"
-            value="outros"
-            required
-          />
-          <label for="outros">Outros</label><br /><br />
-          <!--data de nascimento-->>
-          <label for="date"><b>Data de Nascimento:</b></label>
-          <input
-            type="date"
-            name="data_nascimento"
-            id="data_nascimento"
-            required
-          /><br /><br /><br />
-          <div class="inputbox">
-            <input type="text" name="cpf" id="cpf" class="inputUser" required />
-            <label for="text" class="labelInput">CPF</label><br /><br />
-          </div>
-        </fieldset>
-        <input
-          onclick="abrirAlerta()"
-          type="submit"
+          <label for="especie">Gato</label><br />
+          <br>
+
+          <input type="text" name="inputimg" id="inputimg" placeholder="Insira a URL da Imagem">
+          <label for="Descrição">Descrição:</label>
+          <textarea name="" id="descricao" cols="30" rows="10"></textarea>
+
+        <button
+          onclick="createAnimal()"
           name="submit"
           id="submit"
-        />
-        <input type="reset" name="reset" id="submit" />
-      </form>
+          ></button>
+        
+
+      
     </div>
+    <script src="../../js/criarAnimal.js"></script>
   </body>
 </html>

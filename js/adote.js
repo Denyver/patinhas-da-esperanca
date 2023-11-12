@@ -1,5 +1,5 @@
 let images = document.querySelectorAll(".img-responsive"); 
-const api_link = "https://albg97q39i.execute-api.sa-east-1.amazonaws.com/dev";
+const api_link = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais";  //"https://albg97q39i.execute-api.sa-east-1.amazonaws.com/dev";
 
 images.forEach(img => {
     img.addEventListener("mousemove", mouseMoving);//Evento que registra uma ação

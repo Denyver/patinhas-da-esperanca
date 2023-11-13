@@ -47,11 +47,11 @@ p {
 }
 
 .bar {
-    width: 70px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #fff;
     margin: 6px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: .4s;
 }
@@ -110,11 +110,11 @@ a {
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px;
 }
 
 section.adote-paralax1 {
-    margin-top: 10%;
+    padding: 10%;
     color: #fff;
     font-size: 35px;
     text-align: center;
@@ -129,9 +129,14 @@ section.adote-paralax1 p {
     z-index: 50;
 }
 
-section.module {
-    padding: 40px 0;
-    background-color: #00132E;
+section.module1 {
+    padding: 20px 0;
+    background-color: black;
+}
+
+section.module2 {
+    padding: 20px 0;
+    background-image: linear-gradient(to bottom, #000000, #00000000);
 }
 
 section.module-paralax {
@@ -212,12 +217,12 @@ button{
   }
 
   button:hover{
-    background: #ffffff;
-    color: rgb(0, 0, 0);
+    background: #ffffff3b;
+    color: rgba(0, 0, 0, 0.171);
     box-shadow: 0 0 5px #ffffff,
                 0 0 25px #ffffff,
                 0 0 50px #ffffff,
-                0 0 100px #ffffff7e;
+                0 0 100px #ffffff28;
 }
   
 section.index-paralax button{

@@ -284,9 +284,10 @@ section.adote-paralax1 p {
 }
 
 section.module {
-    padding: 20px 0;
-    background-color: black;
+    padding: 1px 0;
+    background-color: #ff914d;
 }
+
 section.module1 {
     padding: 20px 0;
     background-color: black;
@@ -384,7 +385,7 @@ button{
 }
   
 section.index-paralax button{
-    background-color: #ffc400;
+    background-color: #ff914d;
     margin-top: 1%;
     color: #ffffff;
     text-align: center;
@@ -471,6 +472,7 @@ section.index-paralax1 {
 
 section.index-paralax1 h1{
     color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
     text-align: right;
     margin-left: 55%;
     max-width: 40%;
@@ -480,10 +482,10 @@ section.index-paralax1 h1{
 }
 
 section.index-paralax1 button{
-    background-color: #00132E;
+    background-color: #ff914d;
     margin-top: 2%;
     margin-left: 80%;
-    max-width: 40%;
+    max-width: 20%;
     color: #ffffff;
     text-align: center;
     max-width: 15%;

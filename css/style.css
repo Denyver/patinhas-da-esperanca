@@ -129,6 +129,10 @@ section.adote-paralax1 p {
     z-index: 50;
 }
 
+section.module {
+    padding: 20px 0;
+    background-color: black;
+}
 section.module1 {
     padding: 20px 0;
     background-color: black;

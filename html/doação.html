@@ -1,134 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Um site de um jogo RPG de Mesa, que irá te impressionar!">
-    <title>Patinhas da Esperança</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/Estilo_do_menu.css" />
-    <style>
-      body {
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
 
-        .title{
-            color: white;
-        }
-        .box{
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.521);
-            padding: 15px;
-            border-radius: 20px;
-            width: 20%;
-        }
-        legend{
-            border: 1px solid rgb(255, 255, 255);
-            padding: 10px;
-            text-align: center;
-            background-color: #0d0d13;
-            border-radius: 7px;
-        }
-        #conta{
-            position: fixed;
-            top: 600px;
-            left: 44%;
-            width: 200px;
-        }
-        .inputbox{
-            position: relative;
-            margin: 10px;
-        }
-        .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid rgb(255, 255, 255);outline: none;
-            color: white;
-            font-size: 15px;
-            width: 100%;
-            letter-spacing: 2px; /*espaço entre as letras*/
-        }
-        .labelInput{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none; /*qualquer lugar que clicar, vai executar a ação do input*/
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{ /*focus = quando der o foco pro inputUser ele vai executar uma ação*/
-            top: -20px;
-            font-size: 12px;
-        }
-        #data_nascimento{
-            border: none;
-            padding: 8px;
-            border-radius: 10px; /*deixa as bordas mais redondas*/
-            outline: none; /*retira as bordas externas*/
-            font-size: 15px;
-        }
-        #submit{
-            background-image: linear-gradient(to right rgb(39, 39, 39) rgb(255, 255, 255));
-            width: 100%;
-            border-radius: 14px;
-            border: none;
-            padding: 15px;
-            font-size: 15px;
-            cursor: pointer; /*Ao passar o cursor do mouse, apenas muda o ícone*/
-            margin-top: 18px;
-        }
-        #submit:hover{ /*hover faz cria umaação ao passar o mouse*/
-            background-image: linear-gradient(to right rgb(9, 9, 9) rgb(169, 169, 169));
-        }
-        #fieldset{
-            border-radius: 10px;
-        }
-        #checkbox{
-            margin-left: 22%;
-            
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Um site de um jogo RPG de Mesa, que irá te impressionar!">
+  <title>Patinhas da Esperança</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/Estilo_do_menu.css" />
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+      .title {
+        color: white;
       }
-    </style>
-  </head>
 
-  <body>
-    <div class="menu"></div>
-    <nav>
-      <div class="Estilo_do_menu">
-        <h4>
-          <a href="/html/index.html" rel="noopener noreferrer">
-            Patinhas da Esperança</a>
-        </h4>
-      </div>
-      <ul class="link">
-        <li>
-            <a href="/html/sobre.html">Sobre</a>
-        <li>
-          <a href="/html/doação.html">Doação</a>
-        </li>
-        <li>
-          <a href="/html/adote.html">Adote</a>
-        </li>
-      </ul>
-      <div class="pp">
-        <div class="l1"></div>
-        <div class="l2"></div>
-        <div class="l3"></div>
-      </div>
-    </nav>
-    <script src="/js/pj.js"></script>
+      .box {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.521);
+        padding: 15px;
+        border-radius: 20px;
+        width: 20%;
+      }
 
-    <section class="index-doacao">
-      <h1>Faça a Diferença <span style="color: #ff914d;">Hoje!</span></h1>
-      <p>Doações são essenciais para a ONG Patinhas da Esperança, permitindo resgate e cuidado a animais necessitados. Contribuições proporcionam abrigo, comida, cuidados médicos e amor. Além disso, possibilitam que animais encontrem lares amorosos. Formas simples de doar incluem Pix e transferência bancária.</p>
-    </section>
+      legend {
+        border: 1px solid rgb(255, 255, 255);
+        padding: 10px;
+        text-align: center;
+        background-color: #0d0d13;
+        border-radius: 7px;
+      }
+
+      #conta {
+        position: fixed;
+        top: 600px;
+        left: 44%;
+        width: 200px;
+      }
+
+      .inputbox {
+        position: relative;
+        margin: 10px;
+      }
+
+      .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+        /*espaço entre as letras*/
+      }
+
+      .labelInput {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        /*qualquer lugar que clicar, vai executar a ação do input*/
+        transition: .5s;
+      }
+
+      .inputUser:focus~.labelInput,
+      .inputUser:valid~.labelInput {
+        /*focus = quando der o foco pro inputUser ele vai executar uma ação*/
+        top: -20px;
+        font-size: 12px;
+      }
+
+      #data_nascimento {
+        border: none;
+        padding: 8px;
+        border-radius: 10px;
+        /*deixa as bordas mais redondas*/
+        outline: none;
+        /*retira as bordas externas*/
+        font-size: 15px;
+      }
+
+      #submit {
+        background-image: linear-gradient(to right rgb(39, 39, 39) rgb(255, 255, 255));
+        width: 100%;
+        border-radius: 14px;
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        /*Ao passar o cursor do mouse, apenas muda o ícone*/
+        margin-top: 18px;
+      }
+
+      #submit:hover {
+        /*hover faz cria umaação ao passar o mouse*/
+        background-image: linear-gradient(to right rgb(9, 9, 9) rgb(169, 169, 169));
+      }
+
+      #fieldset {
+        border-radius: 10px;
+      }
+
+      #checkbox {
+        margin-left: 22%;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu"></div>
+  <nav>
+    <div class="Estilo_do_menu">
+      <h4>
+        <a href="/html/index.html" rel="noopener noreferrer">
+          Patinhas da Esperança</a>
+      </h4>
+    </div>
+    <ul class="link">
+      <li>
+        <a href="/html/sobre.html">Sobre</a>
+      </li>
+      <li>
+        <a href="/html/adote.html">Adote</a>
+      </li>
+      <li>
+        <a href="/html/login.html">Entrar</a>
+      </li>
+    </ul>
+    <div class="pp">
+      <div class="l1"></div>
+      <div class="l2"></div>
+      <div class="l3"></div>
+    </div>
+  </nav>
+  <script src="/js/pj.js"></script>
+
+  <section class="index-doacao">
+    <h1>Faça a Diferença <span style="color: #ff914d;">Hoje!</span></h1>
+    <p>Doações são essenciais para a ONG Patinhas da Esperança, permitindo resgate e cuidado a animais necessitados.
+      Contribuições proporcionam abrigo, comida, cuidados médicos e amor. Além disso, possibilitam que animais encontrem
+      lares amorosos. Formas simples de doar incluem Pix e transferência bancária.</p>
+  </section>
+
+  <section class="container-bancos">
+    <div class="bancos">
+      <img src="/img/b1bradesco.png" alt="">
+      <img src="/img/b2santander.png" alt="">
+      <img src="/img/b3itau.png" alt="">
+      <img src="/img/b4boleto.png" alt="">
+      <img src="/img/b5pix.png" alt="">
+    </div>
+  </section>
 
   <footer>
     <div id="footer_content">
@@ -152,28 +188,28 @@
       </div>
 
       <ul class="footer-list">
-          <li>
+        <li>
           <h3>Patinhas</h3>
-          </li>
-          <li>
+        </li>
+        <li>
           <a href="sobre.html" class="footer-link">Sobre</a>
-          </li>
-          <li>
-        </ul>
+        </li>
+        <li>
+      </ul>
 
-        <ul class="footer-list">
-          <li>
-            <h3>Como ajudar</h3>
-          </li>
-          <li>
-            <a href="doação.html" class="footer-link">Doação</a>
-          </li>
-          <li>
-            <a href="adote.html" class="footer-link">Adote</a>
-          </li>
-          <li>
-            <a href="formulário.html" class="footer-link">Cadastre</a>
-          </li>
+      <ul class="footer-list">
+        <li>
+          <h3>Como ajudar</h3>
+        </li>
+        <li>
+          <a href="doação.html" class="footer-link">Doação</a>
+        </li>
+        <li>
+          <a href="adote.html" class="footer-link">Adote</a>
+        </li>
+        <li>
+          <a href="formulário.html" class="footer-link">Cadastre</a>
+        </li>
       </ul>
 
       <div id="footer_subscribe">
@@ -197,5 +233,6 @@
       2023 all rights reserved
     </div>
   </footer>
-  </body>
+</body>
+
 </html>

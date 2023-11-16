@@ -638,6 +638,22 @@ nav ul li:hover .submenu {
     padding: 10px;
 }
 
+section.container-bancos {
+    background-color: #000;
+}
+
+.container-bancos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bancos{
+    background-color: #000;
+}
+
 /*CSS FLEXBOX PERSONAGENS*/
 .container-personagens {
     display: flex;
@@ -645,6 +661,7 @@ nav ul li:hover .submenu {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #00000000;
 }
 
 .zoom {

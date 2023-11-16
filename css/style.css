@@ -19,6 +19,7 @@
     letter-spacing: 1px;
 }
 
+/*inicio do rodapé*/
 main {
     height: 80vh;
 }
@@ -159,11 +160,12 @@ footer {
     
 }
 
+/*fim do rodapé*/
+
 body {
     height: 100vh;
     width: 100vw;
 }
-
 
 body,
 ul,
@@ -177,15 +179,16 @@ p {
     color: white;
 }
 
+/* Inicio dos slides*/
 .content {
     height: 520px;
     width: 935px;
-    border-radius: 20px;
+    border-radius: 100px;
     overflow: hidden;
     /*Vai esconder todo o conteúdo que está ultrapassando as medidas do .content*/
-    position: fixed;
+    position: absolute;
     /*Serve para posicionamento a onde você desejar na tela*/
-    top: 300%;
+    top: 255%;
     /*Centralizar o topo*/
     left: 50%;
     /*Centralizar a Esquerda*/
@@ -254,15 +257,20 @@ p {
     margin-left: -80%;
 }
 
+/* fim dos slides*/
+
+
+/* navbar do adote */
 a {
     /*Links*/
     text-decoration: none;
     color: white;
 }
 
+
 .descricao-principal {
     width: 100%;
-    max-width: 760px;
+    max-width: 20px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -289,8 +297,8 @@ section.module {
 }
 
 section.module1 {
-    padding: 20px 0;
-    background-color: black;
+    padding: 0px 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 section.module2 {
@@ -298,6 +306,7 @@ section.module2 {
     background-image: linear-gradient(to bottom, #000000, #00000000);
 }
 
+/* foto do sobre */
 section.module-paralax {
     display: flex;
     flex-direction: column;
@@ -316,6 +325,7 @@ section.module-paralax {
     -o-background-size: cover;
 }
 
+/* degrade do sobre */
 section.module-paralax:after {
     content: "";
     height: 100%;
@@ -325,6 +335,7 @@ section.module-paralax:after {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
 
+/* 1a foto do index */
 section.index-paralax {
     display: flex;
     flex-direction: column;
@@ -343,6 +354,7 @@ section.index-paralax {
     -o-background-size: cover;
 }
 
+/* titulo do index */
 section.index-paralax h1 {
     color: #ffffff;
     text-align: left;
@@ -350,9 +362,10 @@ section.index-paralax h1 {
     margin-left: 20px;
     font-size: 40px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
+/* descrição do index */
 section.index-paralax p {
     color: #ffffff;
     text-align: left;
@@ -360,15 +373,15 @@ section.index-paralax p {
     max-width: 40%;
     font-size: 17px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-button{
-    padding: 25px 30px;
+button {
+    padding: 25px 20px;
     color: #000000;
     font-weight: bold;
     border: #ffffff;
-    border-radius: 50px;
+    border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
     cursor: pointer;
@@ -376,12 +389,13 @@ button{
   }
 
   button:hover{
+    opacity: 100;
     background: #ffffff3b;
-    color: rgba(0, 0, 0, 0.171);
-    box-shadow: 0 0 5px #ffffff,
-                0 0 25px #ffffff,
-                0 0 50px #ffffff,
-                0 0 100px #ffffff28;
+    color: rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 3px #ffffff,
+                0 0 10px #fffffffd,
+                0 0 20px #ffffff67,
+                0 0 30px #ffffff28;
 }
   
 section.index-paralax button{
@@ -393,7 +407,6 @@ section.index-paralax button{
     max-width: 15%;
     font-size: 18px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.index-paralax:after {
@@ -478,7 +491,6 @@ section.index-paralax1 h1{
     max-width: 40%;
     font-size: 35px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.index-paralax1 button{
@@ -491,7 +503,6 @@ section.index-paralax1 button{
     max-width: 15%;
     font-size: 17px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.index-paralax1:after {
@@ -531,7 +542,7 @@ section.module-paralax1 h1 {
 }
 
 .titulop {
-    font-size: 90pt;
+    font-size: 0pt;
     width: 20% auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }

@@ -651,7 +651,21 @@ section.container-bancos {
 }
 
 .bancos{
-    background-color: #000;
+    display: inline-flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.bankelements{
+    margin-bottom: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.bankelements img{
+    margin-bottom: 10px;
 }
 
 /*CSS FLEXBOX PERSONAGENS*/

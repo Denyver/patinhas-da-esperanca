@@ -1,3 +1,4 @@
+api_link_animais = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais";
 window.onload = () => {
     let wls = window.location.search;
     let urlsearch = new URLSearchParams(wls);
@@ -7,10 +8,9 @@ window.onload = () => {
     getAnimal(id);
 }
 
-api_link = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais";
 function getAnimal(id) {
     //console.log("Fetch")
-    fetch(api_link,
+    fetch(api_link_animais,
         {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
@@ -27,6 +27,9 @@ function getAnimal(id) {
 }
 
 function inputAnimalInfo(animal) {
+    id_pet = document.getElementById('pet_id');
+    id_pet.setAttribute('class', animal.id);
+    id_pet.setAttribute('style','display:none')
     document.getElementById('nome').innerHTML = animal.nome;
     document.getElementById('raca').innerHTML = animal.raca;
     document.getElementById('idade').innerHTML = animal.idade;

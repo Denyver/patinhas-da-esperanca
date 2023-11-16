@@ -10,14 +10,11 @@
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
-        background-image: url(/img/1307447.jpg);
+        background-image: url(/img/7.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         list-style: none;
-      }
-      p{
-        max-width: 10%;
       }
       .title {
         color: white;
@@ -25,13 +22,34 @@
       .box {
         color: white;
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.6);
         padding: 10px;
         border-radius: 15px;
-        width: 50%;
+        width: 30%;
+      }
+      img {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 20px;
+      }
+      p {
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        z-index: 50;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h2 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        z-index: 50;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
       }
       legend {
         border: 1px solid white;
@@ -107,6 +125,26 @@
         width: 100%;
       }
 
+      button {
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+        padding: 10px;
+        color: #000000;
+        font-weight: bold;
+        border: #ffffff;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.5s;
+        cursor: pointer;
+        font-size: 15px;
+      }
+      button:hover {
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff4b,
+          0 0 100px #ffffff28;
+      }
     </style>
   </head>
   <body onload="testeGetId()">
@@ -114,7 +152,7 @@
     <nav>
       <div class="Estilo_do_menu">
         <h4>
-          <a href="/html/index.html" rel="noopener noreferrer">
+          <a href="/html/index.html" class="logo" rel="noopener noreferrer">
             Patinhas da Esperança</a
           >
         </h4>
@@ -138,32 +176,24 @@
     </nav>
     <!-- <script src="/js/pj.js"></script> -->
     <div class="box">
-      
-        <img src="" alt="" id="pet_img">
-        <p>
-          Identificação: <span id="id_show"></span>
-        </p> 
-        <p>
-          Nome: <span id="nome"></span>
-        </p>
-        <p>
-          Idade: <span id="idade"></span>
-        </p>
-        <p>
-          Raça: <span id="raca"></span>
-        </p>
-        <p>
-          Espécie: <span id="especie"></span>
-        </p>
-        <p>Descrição</p>
-        <p><span id="descricao"></span></p>
-        <br><br><br>
-        <p>Nome: <input type="text" name="ad_nome" id="ad_nome"></p>
-        <p>E-mail: <input type="text" name="ad_email" id="ad_email"></p>
-        <p>Telefone: <input type="text" name="ad_telefone" id="ad_telefone"></p>
-        <p>CPF: <input type="text" name="ad_cpf" id="ad_cpf"></p>
-        <button>Adotar</button>
-          
+      <img src="" alt="" id="pet_img" />
+      <p>Nome: <span id="nome"></span></p>
+      <br /><br />
+      <p>Idade: <span id="idade"></span></p>
+      <br /><br />
+      <p>Raça: <span id="raca"></span></p>
+      <br /><br />
+      <p>Espécie: <span id="especie"></span></p>
+      <br /><br />
+      <p>Descrição</p>
+      <p><span id="descricao"></span></p>
+      <br /><br /><br />
+      <h2>------- Preencha o Formulário -------</h2><br>
+      <p>Nome: <input type="text" name="ad_nome" id="ad_nome" /></p>
+      <p>E-mail: <input type="text" name="ad_email" id="ad_email" /></p>
+      <p>Telefone: <input type="text" name="ad_telefone" id="ad_telefone" /></p>
+      <p>CPF: <input type="text" name="ad_cpf" id="ad_cpf" /></p>
+      <button id="button">Adotar</button>
     </div>
     <script src="/js/onloadScript.js"></script>
   </body>

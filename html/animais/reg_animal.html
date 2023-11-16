@@ -16,7 +16,7 @@
         background-size: cover;
         list-style: none;
       }
-      p{
+      p {
         max-width: 10%;
       }
       .title {
@@ -107,6 +107,9 @@
         width: 100%;
       }
 
+      #descricao {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -114,7 +117,7 @@
     <nav>
       <div class="Estilo_do_menu">
         <h4>
-          <a href="/html/index.html" rel="noopener noreferrer">
+          <a href="/html/index.html" class="logo" rel="noopener noreferrer">
             Patinhas da Esperança</a
           >
         </h4>
@@ -138,76 +141,57 @@
     </nav>
     <!-- <script src="/js/pj.js"></script> -->
     <div class="box">
-      
-        
-          <legend><b>Registro Animal</b></legend>
-          <br>
-          <div class="inputbox">
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              class="inputUser"
-              required
-            />
-            <label for="nome" class="labelInput">Nome</label>
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="text"
-              name="Raça"
-              id="raca"
-              class="inputUser"
-              required
-            />
-            <label for="raça" class="labelInput">Raça</label>
-          </div>
-          <br />
-          <div class="inputbox">
-            <input
-              type="number"
-              name="Idade"
-              id="idade"
-              class="inputUser"
-              required
-            />
-            <label for="idade" class="labelInput">Idade</label>
-          </div>
-          <br />
-          <p>Espécie</p>
-          <!--Cachorro-->
-          <input
-            type="radio"
-            id="especie"
-            name="especie"
-            value="cachorro"
-            required
-          />
-          <label for="especie">Cachorro</label>
-          <!--Gato-->
-          <input
-            type="radio"
-            id="especie"
-            name="especie"
-            value="gato"
-            required
-          />
-          <label for="especie">Gato</label><br />
-          <br>
+      <legend><b>Registro Animal</b></legend>
+      <br />
+      <div class="inputbox">
+        <input type="text" name="nome" id="nome" class="inputUser" required />
+        <label for="nome" class="labelInput">Nome</label>
+      </div>
+      <br />
+      <div class="inputbox">
+        <input type="text" name="Raça" id="raca" class="inputUser" required />
+        <label for="raça" class="labelInput">Raça</label>
+      </div>
+      <br />
+      <div class="inputbox">
+        <input
+          type="number"
+          name="Idade"
+          id="idade"
+          class="inputUser"
+          required
+        />
+        <label for="idade" class="labelInput">Idade</label>
+      </div>
+      <br />
+      <p>Espécie</p>
+      <!--Cachorro-->
+      <input
+        type="radio"
+        id="especie"
+        name="especie"
+        value="cachorro"
+        required
+      />
+      <label for="especie">Cachorro</label>
+      <!--Gato-->
+      <input 
+      type="radio" id="especie" name="especie" value="gato" required />
+      <label for="especie">Gato</label><br />
+      <br />
 
-          <input type="text" name="inputimg" id="inputimg" placeholder="Insira a URL da Imagem">
-          <label for="Descrição">Descrição:</label>
-          <textarea name="" id="descricao" cols="30" rows="10"></textarea>
+      <input
+        type="text"
+        name="inputimg"
+        id="inputimg"
+        placeholder="Insira a URL da Imagem"
+      />
+      <br /><br />
 
-        <button
-          onclick="createAnimal()"
-          name="submit"
-          id="submit"
-          ></button>
-        
+      <label for="Descrição">Descrição:</label>
+      <textarea name="" id="descricao" cols="30" rows="10"></textarea>
 
-      
+      <button onclick="createAnimal()" name="submit" id="submit">Enviar</button>
     </div>
     <script src="../../js/criarAnimal.js"></script>
   </body>

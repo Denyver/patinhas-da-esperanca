@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=""/>
+    <title>Patinhas da Esperança</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/Estilo_do_menu.css" />
+    <link rel="stylesheet" href="/css/login.css">
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url(/img/7.jpg);
+      }
+    </style>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <!-- Default theme -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"
+    />
+    <!-- Semantic UI theme -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"
+    />
+    <!-- Bootstrap theme -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="menu"></div>
+    <nav>
+      <div class="Estilo_do_menu">
+        <h4>
+          <a href="/html/index.html" rel="noopener noreferrer">
+            Patinhas da Esperança</a
+          >
+        </h4>
+      </div>
+      <ul class="link">
+        <li>
+          <a href="/html/sobre.html">Sobre</a>
+        </li>
+        <li>
+          <a href="/html/doação.html">Doação</a>
+        </li>
+        <li>
+          <a href="/html/adote.html">Adote</a>
+        </li>
+      </ul>
+      <div class="pp">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+      </div>
+    </nav>
+    <h1>Login</h1>
+    <div id="login_box">
+      <p><b>E-mail</b></p>
+      <input type="text" name="" id="email">
+      <p><b>Senha</b></p>
+      <input type="password" name="" id="senha">
+      <p></p>
+      <button class="send_standard" onclick="login()">Conectar</button>
+      <br>
+      <p id="failedLogin" style="display:none;"></p>
+    </div>
+
+    <script src="/js/pj.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="/js//user.js"></script>
+  </body>
+</html>

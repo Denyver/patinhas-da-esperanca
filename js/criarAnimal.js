@@ -1,8 +1,8 @@
-api_link = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais/animal";
+api_link_adotar = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais/animal";
 
 function postAnimal(nome, especie, raca, url, idade, descricao) { //Função Fetch envia os dados via API e recebe uma response com o token referente ao segredo
     console.log("Fetch")
-    fetch(api_link,
+    fetch(api_link_adotar,
         {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },

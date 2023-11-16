@@ -1,15 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
 :root {
     --cor-fundo: rgb(255, 153, 0);
     --cor-hover: #ffc400;
     --cor-primaria: #CAC4CE;
     --cor-teste: rgba(0, 0, 0, 0.579);
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
 }
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+/*inicio do rodapé*/
+main {
+    height: 80vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#watsapp {
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:rover{
+    color: #ff9807;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #ff9807;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 2rem;
+    }
+    
+}
+
+/*fim do rodapé*/
 
 body {
     height: 100vh;
     width: 100vw;
 }
-
 
 body,
 ul,
@@ -18,20 +174,20 @@ p {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
+/* Inicio dos slides*/
 .content {
     height: 520px;
     width: 935px;
-    border-radius: 20px;
+    border-radius: 100px;
     overflow: hidden;
     /*Vai esconder todo o conteúdo que está ultrapassando as medidas do .content*/
     position: absolute;
     /*Serve para posicionamento a onde você desejar na tela*/
-    top: 300%;
+    top: 255%;
     /*Centralizar o topo*/
     left: 50%;
     /*Centralizar a Esquerda*/
@@ -100,17 +256,26 @@ p {
     margin-left: -80%;
 }
 
+/* fim dos slides*/
+
+
+/* navbar do adote */
 a {
     /*Links*/
     text-decoration: none;
     color: white;
 }
 
+
 .descricao-principal {
     width: 100%;
-    max-width: 760px;
+    max-width: 50%;
     margin: 0 auto;
     padding: 10px;
+}
+
+.descricao-principal p {
+    font-size: 20px;
 }
 
 section.adote-paralax1 {
@@ -130,12 +295,13 @@ section.adote-paralax1 p {
 }
 
 section.module {
-    padding: 20px 0;
-    background-color: black;
+    padding: 1px 0;
+    background-color: #ff914d;
 }
+
 section.module1 {
-    padding: 20px 0;
-    background-color: black;
+    padding: 0px 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 section.module2 {
@@ -143,6 +309,7 @@ section.module2 {
     background-image: linear-gradient(to bottom, #000000, #00000000);
 }
 
+/* foto do sobre */
 section.module-paralax {
     display: flex;
     flex-direction: column;
@@ -161,6 +328,7 @@ section.module-paralax {
     -o-background-size: cover;
 }
 
+/* degrade do sobre */
 section.module-paralax:after {
     content: "";
     height: 100%;
@@ -169,7 +337,37 @@ section.module-paralax:after {
     z-index: 8;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
+/* pagina de doação */
+section.index-doacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-image: url(/img/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
+section.index-doacao p {
+    padding: 20px;
+    font-size: 20px;
+    max-width: 50%;
+}
+
+section.index-doacao h1 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+/* 1a foto do index */
 section.index-paralax {
     display: flex;
     flex-direction: column;
@@ -188,6 +386,7 @@ section.index-paralax {
     -o-background-size: cover;
 }
 
+/* titulo do index */
 section.index-paralax h1 {
     color: #ffffff;
     text-align: left;
@@ -195,9 +394,10 @@ section.index-paralax h1 {
     margin-left: 20px;
     font-size: 40px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
+/* descrição do index */
 section.index-paralax p {
     color: #ffffff;
     text-align: left;
@@ -205,15 +405,15 @@ section.index-paralax p {
     max-width: 40%;
     font-size: 17px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-button{
-    padding: 25px 30px;
+button {
+    padding: 25px 20px;
     color: #000000;
     font-weight: bold;
     border: #ffffff;
-    border-radius: 50px;
+    border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
     cursor: pointer;
@@ -221,16 +421,17 @@ button{
   }
 
   button:hover{
+    opacity: 100;
     background: #ffffff3b;
-    color: rgba(0, 0, 0, 0.171);
-    box-shadow: 0 0 5px #ffffff,
-                0 0 25px #ffffff,
-                0 0 50px #ffffff,
-                0 0 100px #ffffff28;
+    color: rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 3px #ffffff,
+                0 0 10px #fffffffd,
+                0 0 20px #ffffff67,
+                0 0 30px #ffffff28;
 }
   
 section.index-paralax button{
-    background-color: #ffc400;
+    background-color: #ff914d;
     margin-top: 1%;
     color: #ffffff;
     text-align: center;
@@ -238,7 +439,6 @@ section.index-paralax button{
     max-width: 15%;
     font-size: 18px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.index-paralax:after {
@@ -317,25 +517,24 @@ section.index-paralax1 {
 
 section.index-paralax1 h1{
     color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
     text-align: right;
     margin-left: 55%;
     max-width: 40%;
     font-size: 35px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.index-paralax1 button{
-    background-color: #00132E;
+    background-color: #ff914d;
     margin-top: 2%;
     margin-left: 80%;
-    max-width: 40%;
+    max-width: 20%;
     color: #ffffff;
     text-align: center;
     max-width: 15%;
     font-size: 17px;
     z-index: 50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.index-paralax1:after {
@@ -375,7 +574,7 @@ section.module-paralax1 h1 {
 }
 
 .titulop {
-    font-size: 90pt;
+    font-size: 0pt;
     width: 20% auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -439,6 +638,22 @@ nav ul li:hover .submenu {
     padding: 10px;
 }
 
+section.container-bancos {
+    background-color: #000;
+}
+
+.container-bancos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bancos{
+    background-color: #000;
+}
+
 /*CSS FLEXBOX PERSONAGENS*/
 .container-personagens {
     display: flex;
@@ -446,6 +661,7 @@ nav ul li:hover .submenu {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #00000000;
 }
 
 .zoom {

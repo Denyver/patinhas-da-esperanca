@@ -1,5 +1,5 @@
 let images = document.querySelectorAll(".img-responsive"); 
-const api_link = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais";  //"https://albg97q39i.execute-api.sa-east-1.amazonaws.com/dev";
+const api_link_adotar = "https://4uspryly5g.execute-api.sa-east-1.amazonaws.com/dev/animais";  //"https://albg97q39i.execute-api.sa-east-1.amazonaws.com/dev";
 
 images.forEach(img => {
     img.addEventListener("mousemove", mouseMoving);//Evento que registra uma ação
@@ -28,56 +28,7 @@ function mouseOut(){
 
 
 function testInput() {
-    /*
-    listAdd = [
-        {
-            "id": "0001",
-            "cpf_adotante": "a",
-            "data_in": "a",
-            "data_out": "a",
-            "especie": "a",
-            "idade": 12,
-            "img": "/img/gato4.webp",
-            "nome": "Pituca",
-            "raca": "a"
-        },
-        {
-            "id": "0002",
-            "cpf_adotante": "a",
-            "data_in": "a",
-            "data_out": "a",
-            "especie": "a",
-            "idade": 12,
-            "img": "/img/gato1.webp",
-            "nome": "Pituca",
-            "raca": "a"
-        },
-        {
-            "id": "0003",
-            "cpf_adotante": "a",
-            "data_in": "a",
-            "data_out": "a",
-            "especie": "a",
-            "idade": 12,
-            "img": "/img/gato2.webp",
-            "nome": "Pituca",
-            "raca": "a"
-        },
-        {
-            "id": "0004",
-            "cpf_adotante": "a",
-            "data_in": "a",
-            "data_out": "a",
-            "especie": "a",
-            "idade": 12,
-            "img": "/img/gato3.webp",
-            "nome": "Pituca",
-            "raca": "a"
-        },
-        
-    ]
-    */
-    //animal_card(listAdd);
+
     getAllAnimals();
 }
 
@@ -111,7 +62,7 @@ function animal_card(listItem) {
 
 function getAllAnimals() {
     //console.log("Fetch")
-    fetch(api_link,
+    fetch(api_link_adotar,
         {
             method: "GET",
             headers: { 'Content-Type': 'application/json' },
@@ -128,12 +79,4 @@ function getAllAnimals() {
         })
 }
 
-function getAnimal() {
-    
-}
-
-function testeGetId(id) {
-
-    document.getElementById('id_show').innerHTML = id;
-}
 

@@ -1,0 +1,28 @@
+
+
+#login_box{
+    width: 400px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 200px;
+    text-align: center;
+    border-color: azure;
+}
+
+
+.send_standard{
+    margin-top: 5%;
+    width: 50%;
+    font-size: 16pt;
+    color: black;
+}
+
+input:focus {
+    background-color: rgb(23, 36, 104);
+    color: white;
+}
+

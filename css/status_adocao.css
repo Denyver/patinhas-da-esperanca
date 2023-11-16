@@ -1,0 +1,63 @@
+
+
+#status_box{
+    width: 75%;
+    height: 65%;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 200px;
+    text-align: center;
+    border-color: azure;
+    display: flex;
+}
+
+
+.send_standard{
+    margin-top: 5%;
+    width: 50%;
+    font-size: 16pt;
+    color: black;
+}
+
+input:focus {
+    background-color: rgb(23, 36, 104);
+    color: white;
+}
+
+.card_adoption{
+    min-width: 250px;
+    min-height: 280px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 200px;
+    text-align: center;
+    border-color: azure;
+    font-size: 10px;
+}
+
+#button_recusar{
+    width: 80px;
+    height: 25px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: brown;
+}
+
+#button_aceitar{
+    width: 80px;
+    margin: 3px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgb(42, 165, 52)
+}
+
+.size_valor{
+    font-size: 10px;
+    color: red;
+}

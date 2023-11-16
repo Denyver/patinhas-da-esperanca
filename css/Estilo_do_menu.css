@@ -38,10 +38,10 @@ nav {
 }
 
 .link li a:hover {
-    background-color: rgb(255, 185, 33);
+    background-color: #ff914d80;
     transition: background .2s;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: .2s;
 }
 
